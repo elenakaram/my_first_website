@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый веб-сайт</title>
+</head>
+
+<body>
+    <!--navigation menu-->
+    <header>
+        <a href="../index.html">Главная</a>
+        <a href="about.html">О Нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="#">Контакты</a>
+    </header>
+    <!--main content-->
+    <main>
+        <h1>Контакты</h1>
+        <address>
+            г. Новосибирск,
+            <br>
+            Улица Ленина 12,
+            <br>
+            Кейтеринг В Новосибирске
+            <br>
+            <br>
+            <p>По всем вопросам звоните в рабочее время с 10:00 до 18:00
+                <br>
+                Телефон: <a href="tel:80008008000">8000800800</a>
+            </p>
+        </address>
+
+        <!--feedback form-->
+        <h2>Обратная связь</h2>
+
+        <form action="../form_send.php" method="POST">
+            <label for="name">Ваше Имя: </label>
+            <input type="text" name="name" id ="name" required placeholder="Иван">*
+
+            <br>
+            <label for="phone">Контактный Телефон: </label>
+            <input type="tel" name="phone" id ="phone" required placeholder="+7965365214">*
+
+            <br>
+            <label for="email">Электронная Почта: </label>
+            <input type="email" name="email" id="email" placeholder="ivano@mail.ru">
+
+
+            <br>
+            <label for="message">Сообщение: </label>
+            <textarea name="feedback" id="message" required cols="40" rows="5"></textarea>*
+            <br>
+
+            <button type="submit">Отправить</button>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <!--footer menu navigation-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="about.html">О Нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <p>&#128386; По всем вопросам обращаться в справочный отдел: <a
+                href="mailto:info@ngsctering.ru">info@ngsctering.ru</a></p>
+
+        <p>&#9742; Телефон: <a href="tel:80008008000">8000800800</a></p>
+        <br>
+
+        <span>&copy;&nbsp;Skillfactory</span>
+
+    </footer>
+</body>
+
+</html>
